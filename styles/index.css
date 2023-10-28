@@ -1,11 +1,9 @@
 .wrapper {
-  padding-top: 100px;
-  padding-bottom: 100px;
-  padding: 100px 20px;
+  padding: 80px 20px;
   display: flex;
   flex-direction: row-reverse;
-  gap: 20px;
-  justify-content: flex-end;
+  gap: 30px;
+  justify-content: space-evenly;
 }
 .main-info-wrapper {
   display: flex;
@@ -18,10 +16,19 @@ aside {
   gap: 20px;
 }
 .block {
-  background-color: rgb(151, 150, 150);
+  background-color: rgb(229, 202, 202);
   padding: 10px;
   width: 600px;
   border-radius: 6px;
+  text-align: justify-all;
+}
+
+.aside-block {
+  background-color: rgb(229, 202, 202);
+  padding: 10px;
+  width: 200px;
+  border-radius: 6px;
+  text-align: justify-all;
 }
 
 .block-name {
@@ -40,32 +47,25 @@ aside {
   text-transform: uppercase;
   line-height: 1.1;
 }
-.project-link {
-  text-transform: uppercase;
-  cursor: pointer;
-  transform: scale(1);
-  transition: transform 250ms ease-in-out;
-  color: #ffffffad;
-}
-.project-link:hover,
-.project-link:focus {
-  transform: scale(1.1);
-}
-.project-git {
-  text-decoration: underline;
-}
 
 .project-item {
   display: flex;
-  gap: 10px;
-  justify-content: flex-start;
-  align-items: center;
-}
-
-.link-wrapper {
-  display: flex;
   flex-direction: column;
   gap: 5px;
+}
+.project-link {
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: color 250ms ease-in-out;
+  color: #f55d5dad;
+}
+.project-link:hover,
+.project-link:focus {
+  color: #c62c2cad;
+}
+.project-git {
+  text-decoration: underline;
+  margin-bottom: 5px;
 }
 
 span {
@@ -75,6 +75,7 @@ span {
 .profile {
   display: flex;
   gap: 10px;
+  justify-content: center;
 }
 .profile-description {
   display: flex;

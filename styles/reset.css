@@ -6,7 +6,7 @@ html {
 body {
   margin: 0;
   font-family: 'Josefin Sans', sans-serif;
-  background: gray;
+  background: rgb(241, 225, 225);
   min-height: 100vh;
 
   font-style: normal;
